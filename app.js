@@ -1,4 +1,4 @@
-let num = 10;
+let num = Math.floor(Math.random() * 10) + 1;;
         
 function checkNumber() {
     let inputVal = document.getElementById("numberInput").value;
