@@ -6,6 +6,7 @@ function checkNumber() {
     
     if (inputVal === num) {
         resultText = "Valid input 😍";
+        alert("you win");
     } else if(inputVal<num) {
         resultText = "This is Low Number 👇";
     } else if (inputVal>num){
