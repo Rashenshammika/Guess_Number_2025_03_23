@@ -1,5 +1,13 @@
 let num = Math.floor(Math.random() * 10) + 1;
-        let attempts = 3;
+let attempts = 3;
+        
+        function resetGame() {
+            num = Math.floor(Math.random() * 10) + 1;
+            attempts = 3;
+            document.getElementById("result").innerText = "";
+            document.getElementById("numberInput").value = "";
+        }
+
         
         function checkNumber() {
             if (attempts > 0) {
@@ -29,9 +37,4 @@ let num = Math.floor(Math.random() * 10) + 1;
             }  
         }
         
-        function resetGame() {
-            num = Math.floor(Math.random() * 10) + 1;
-            attempts = 3;
-            document.getElementById("result").innerText = "";
-            document.getElementById("numberInput").value = "";
-        }
+       
