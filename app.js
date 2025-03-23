@@ -1,13 +1,15 @@
 let num = Math.floor(Math.random() * 10) + 1;;
         
 function checkNumber() {
-    let inputVal = document.getElementById("numberInput").value;
+    let inputVal = parseInt(document.getElementById("numberInput").value);
     let resultText;
     
-    if (parseInt(inputVal) === num) {
+    if (inputVal === num) {
         resultText = "Valid input 😍";
-    } else {
-        resultText = "Invalid Input 🥲";
+    } else if(inputVal<num) {
+        resultText = "This is Low Number 👇";
+    } else if (inputVal>num){
+        resultText = "This is High Number 👆"
     }
     
     document.getElementById("result").innerText = resultText;
